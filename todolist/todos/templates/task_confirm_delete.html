@@ -1,0 +1,26 @@
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'todos/task_delete.css' %}">
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="delete-container">
+      <h2 class="titlename">TODO LIST</h2>
+      {% block content %}
+        <h2>Delete Task</h2>
+        <form method="post">
+          {% csrf_token %}
+          <p>Are you sure you want to delete the task "{{ object.task_title }}"?</p>
+          <div class="buttons">
+            <button type="submit" class="btn-r">Confirm</button>
+            <a href="{% url 'task-list' %}" class="cancel-btn">Cancel</a>
+          </div>
+        </form>
+      {% endblock %}
+    </div>
+  </body>
+</html>

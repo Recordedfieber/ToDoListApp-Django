@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'todos/task_form.css' %}">
+  <title>Todo List</title>
+</head>
+<body>
+  <div class="form-container">
+    <h2 class="titlename">TODO LIST</h2> 
+    {% block content %}
+      <h2>Create New Task</h2>
+      <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="{{ form.task_title.id_for_label }}">Task title:</label>
+            {{ form.task_title }}
+        </div>
+        <div class="form-group">
+            <label for="{{ form.task_priority.id_for_label }}">Task priority:</label>
+            {{ form.task_priority }}
+        </div>
+        <div class="form-group">
+            <label for="{{ form.task_due_date.id_for_label }}">Task due date:</label>
+            {{ form.task_due_date }}
+        </div>
+        <div class="form-group">
+            <label for="{{ form.task_status.id_for_label }}">Task status:</label>
+            {{ form.task_status }}
+        </div>
+        <button type="submit">Create Task</button>
+      </form>    
+    {% endblock %}
+  </div>
+</body>
+</html>

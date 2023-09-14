@@ -1,0 +1,17 @@
+.idea/*
+*.pyc
+todolist/db.sqlite3
+.venv/
+
+./todolist/todolist/__pycache__/settings.cpython-311.pyc
+./todolist/todolist/__pycache__/urls.cpython-311.pyc
+todolist/__pycache__/settings.cpython-311.pyc
+todolist/__pycache__/urls.cpython-311.pyc
+
+todos/.DS_Store
+todos/migrations/*
+
+todos/templates/.DS_Store
+
+.DS_Store
+todolist/.DS_Store

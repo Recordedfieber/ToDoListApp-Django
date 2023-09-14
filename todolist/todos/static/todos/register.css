@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Ramabhadra&display=swap');
+
+html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    background-color: #f5f5f5;
+    background: linear-gradient(45deg, #0055b6 0%, #65adff 50%, #0055b6 100%);
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 800px;
+}
+
+.circle-container {
+    text-align: center;
+    animation: slideDown 1s ease-in-out; /* Define the animation */
+}
+
+.outer-circle {
+  background-color: #e6e6e6; 
+  width: 250px; 
+  height: 250px; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.inner-circle {
+  background-color: #ccc;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-circle {
+    background-color: #ccc; /* Light grey background color */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 36px;
+    font-family: 'Megrim', cursive;
+    font-weight: 500;
+    color: #333;
+    animation: fadeIn 1s ease-in-out; /* Add fade-in animation */
+}
+
+.login-text {
+    font-size: 24px;
+    color: #333;
+    animation: fadeIn 1s ease-in-out; /* Add fade-in animation */
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Define the slide-down animation */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Define the fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.titlename {
+    font-size: 26px;
+    font-family: 'Megrim', cursive;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+.p-login {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.p-login a {
+  color: #3498db; /* Link color */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.p-login a:hover {
+  color: #2980b9; /* Hover color */
+}

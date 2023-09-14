@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Ramabhadra&display=swap');
+
+html, body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+   background-color: #f5f5f5;
+   background: linear-gradient(45deg, #0055b6 0%, #65adff 50%, #0055b6 100%);
+   background-repeat: no-repeat;
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ .delete-container {
+   background-color: white;
+   margin: 20px auto;
+   padding: 20px;
+   width: 80%;
+   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .titlename {
+  color: #333;
+  font-size: 36px;
+  font-family: 'megrim', cursive;
+  text-align: center;
+  margin-top: 0;
+}
+ 
+ .btn-r {
+   background-color: #e74c3c; 
+   background: linear-gradient(to bottom, #aa1201, #e74c3c);
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+ 
+ .btn-r:hover {
+  background: linear-gradient(to bottom, #aa1201, #e74c3c);
+  box-shadow: 0px 4px 10  px rgba(0, 0, 0, 0.1); 
+}
+ 
+ .cancel-btn {
+   color: #3498db;
+   text-decoration: none;
+   margin-left: 10px;
+ }
+ 
